@@ -1,0 +1,26 @@
+{
+  "inputJSON":{
+  "counterTop" : {
+    "loaf1" : {
+      "type" : "white",
+      "slices" : "slice1"
+    },
+    "jar2" : {
+      "contents" : "jelly"
+      }
+    }
+  },
+
+"JoltSpec": [
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "counterTop": {
+        "jar2": {
+          "contents": "=toUpper"
+        }
+      }
+    }
+  }
+]
+}

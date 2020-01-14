@@ -1,0 +1,37 @@
+{
+  "inputJSON": {
+    "counterTop": {
+      "loaf1": {
+        "type": "white",
+        "slices": [
+          "slice1",
+          "slice2",
+          "slice3",
+          "slice4"
+        ]
+      },
+      "loaf2": {
+        "type": "wheat"
+      },
+      "jar1": {
+        "contents": "peanut butter"
+      },
+      "jar2": {
+        "contents": "jelly"
+      }
+    }
+  },
+  "JoltSpec":  [
+    {
+      "operation": "cardinality",
+      "spec": {
+        "counterTop": {
+          "loaf1": {
+            "slices": "ONE"
+          }
+        }
+      }
+    }
+  ]
+
+}
